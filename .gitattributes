@@ -1,2 +1,8 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Chuẩn hóa line ending cho toàn repo: mọi file text lưu LF trong repo VÀ checkout LF
+# ra working tree (eol=lf ghi đè core.autocrlf của từng máy — hết cảnh báo
+# "LF will be replaced by CRLF" / diff "change in line endings" trên Windows).
+* text=auto eol=lf
+
+# File script Windows đặc thù bắt buộc CRLF mới chạy đúng (hiện repo chưa có, phòng khi thêm sau).
+*.bat text eol=crlf
+*.cmd text eol=crlf

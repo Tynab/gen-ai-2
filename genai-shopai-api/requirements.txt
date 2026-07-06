@@ -1,0 +1,14 @@
+# Dependency backend FastAPI (ShopAI) — pin phiên bản tối thiểu bằng >= theo quy ước repo.
+# Cài đầy đủ (runtime + test): pip install -r requirements.txt
+
+# Runtime
+fastapi>=0.115
+uvicorn[standard]>=0.32
+openai>=1.54
+python-dotenv>=1.0
+pydantic>=2.9
+psycopg[binary]>=3.2
+
+# Dev / test — chạy bằng: python -m pytest
+pytest>=8.3
+httpx2>=2.5
